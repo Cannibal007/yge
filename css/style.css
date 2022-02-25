@@ -160,6 +160,7 @@ html{
 }
 
 .section{
+    color: #e35b53;
     /* height: 320px; */
     display: flex;
     justify-content: space-evenly;
@@ -186,7 +187,7 @@ html{
     height: 100%;
     /* margin-top: -80px; */
     z-index: -1;
-    opacity: 0.7;
+    /* opacity: 0.7; */
 }
 
 .imgFluid{
@@ -300,3 +301,71 @@ html{
     margin: 3px 4px;
 }
 
+@media only screen and (max-width: 1100px){
+    .nav-list{
+        flex-direction: column;
+        margin-top: 65px;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 500px;
+        transition: all 0.7s ease-out;
+    }
+    .nav-list li{
+        padding: 20px;
+    }
+    .rightNav{
+        text-align: center;
+    }
+
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .section{
+        flex-direction: column-reverse;
+    }
+    #search{
+        width: 100%;
+    }
+
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: justify;
+        padding-bottom: 20px;
+    }
+
+    .paras{
+        padding: 0px;
+    }
+
+    .secondHalf{
+        padding: 0px;
+    }
+
+    .imgFluidRight{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .contact{
+        height: 80vh;
+    }
+
+    .burger{
+        display: block;
+    }
+    /* .logo{
+        position: relative;
+    } */
+    .h-nav-resp{
+        height: 72px;
+    }
+
+    .v-class-resp{
+       opacity:0 ;
+    }
+}
